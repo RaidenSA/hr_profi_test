@@ -1,0 +1,4 @@
+SELECT department, count(full_name) as employee_number FROM emloyees
+WHERE position = 'Software Developer'
+GROUP BY department
+HAVING employee_number < 5
